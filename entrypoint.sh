@@ -1,3 +1,9 @@
 #!/bin/sh -l
 
-echo "hello $1"
+echo "Beginning Build Task"
+
+# Initialize Gradle
+/opt/gradle/gradle-7.5.1/bin/gradle wrapper
+chmod +x gradlew
+
+./gradlew build
