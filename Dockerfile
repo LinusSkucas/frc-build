@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt update && apt upgrade -y
+RUN apt-get update && apt-get upgrade -y
 
 # Install gradle
 RUN apt install wget -y
