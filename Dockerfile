@@ -1,7 +1,5 @@
 FROM ubuntu:latest
 
-COPY LICENSE README.md /
-
 RUN apt update && apt upgrade -y
 
 # Install gradle
